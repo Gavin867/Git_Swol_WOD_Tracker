@@ -1,5 +1,5 @@
 let mongoose = require("mongoose");
-let db = require("../models");
+let models = require("../models");
 
 mongoose.connect("mongodb://localhost/Git_Swol_DB", {
   useNewUrlParser: true,
@@ -124,8 +124,8 @@ let workoutSeed = [
   }
 ];
 
-db.Workout.deleteMany({})
-  .then(() => db.Workout.collection.insertMany(workoutSeed))
+models.Workout.deleteMany({})
+  .then(() => models.Workout.collection.insertMany(workoutSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

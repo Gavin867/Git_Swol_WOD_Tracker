@@ -2,6 +2,7 @@ const API = {
   async getLastWorkout() {
     let res;
     try {
+      // do a get route for this
       res = await fetch("/api/workouts");
     } catch (err) {
       console.log(err)
@@ -12,7 +13,8 @@ const API = {
   },
   async addExercise(data) {
     const id = location.search.split("=")[1];
-
+  
+    // put route for this
     const res = await fetch("/api/workouts/" + id, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -24,6 +26,7 @@ const API = {
     return json;
   },
   async createWorkout(data = {}) {
+    // post route
     const res = await fetch("/api/workouts", {
       method: "POST",
       body: JSON.stringify(data),
@@ -35,6 +38,7 @@ const API = {
     return json;
   },
 
+  // get path for this
   async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();
