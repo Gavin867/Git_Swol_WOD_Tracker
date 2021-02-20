@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Schemea = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 const swolSchema = new Schema({
     day: {
@@ -23,5 +23,8 @@ const swolSchema = new Schema({
             distance: Number
         }
     ]
-}, { toJSON: { virtuals: true } });
+});
 
+const Workout = mongoose.model("Workout", swolSchema);
+
+module.exports = Workout;
