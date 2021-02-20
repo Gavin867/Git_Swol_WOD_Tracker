@@ -10,17 +10,27 @@ const swolSchema = new Schema({
         {
             type: {
                 type: String,
-                required: true,
+                required: true
             },
             name: {
                 type: String,
-                required: true,
+                required: true
             },
-            durations: Number,
-            weight: Number,
-            reps: Number,
-            sets: Number,
-            distance: Number
+            duration: {
+                type: Number
+            },
+            weight: {
+                type: Number
+            },
+            reps: {
+                type: Number
+            },
+            sets: {
+                type: Number
+            },
+            distance: {
+                type: Number
+            },
         }
     ]
 });
