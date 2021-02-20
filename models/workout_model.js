@@ -4,7 +4,7 @@ const Schemea = mongoose.Schema;
 const swolSchema = new Schema({
     day: {
         type: Date,
-        default: Date.now
+        default: () => new Date()
     },
     exercises: [
         {
@@ -23,4 +23,5 @@ const swolSchema = new Schema({
             distance: Number
         }
     ]
-});
+}, { toJSON: { virtuals: true } });
+
