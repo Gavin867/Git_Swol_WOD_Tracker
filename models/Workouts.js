@@ -4,20 +4,23 @@ const Schema = mongoose.Schema;
 const swolSchema = new Schema({
     day: {
         type: Date,
-        default: () => new Date()
+        default: Date.now
     },
     exercises: [
         {
             type: {
                 type: String,
+                trim: true,
                 required: true
             },
             name: {
                 type: String,
+                trim: true,
                 required: true
             },
             duration: {
-                type: Number
+                type: Number,
+                required: "Please enter a duration in minutes."
             },
             weight: {
                 type: Number
@@ -33,6 +36,8 @@ const swolSchema = new Schema({
             },
         }
     ]
+}, {
+    toJSON: {virtuals: true}
 });
 
 const Workout = mongoose.model("Workout", swolSchema);
