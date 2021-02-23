@@ -49,7 +49,12 @@ router.put("/api/workouts/:id", (req, res) => {
 
   console.log(req.body)
 
-  Workout.findByIdAndUpdate(req.params.id, { $push: { excercises: req.body } }).then(workouts => {
+  Workout.findByIdAndUpdate(req.params.id, { 
+    
+    $push: { 
+    exercises: req.body 
+  
+  }}).then(workouts => {
 
     res.json(workouts);
 
