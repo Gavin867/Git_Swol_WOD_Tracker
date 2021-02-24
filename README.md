@@ -8,7 +8,6 @@ A mongoDB application for people who like to lift things up and put them down ..
 
 - [Location](#locations)
 - [Application Summary](#application-summary)
-<!-- - [Demo](#demo) -->
 - [Installation](#installation)
 - [Testing](#testing)
 - [Usage Instructions](#usage-instructions)
@@ -26,24 +25,16 @@ Heroku Deployed Link: https://git-swol-wod-tracker.herokuapp.com/
 
 ## Application Summary
 
-![Landing Page Stillshot](https://github.com/Gavin867/Git_Swol_WOD_Tracker/blob/public/assets/images/main-menu.png)
+![Landing Page Stillshot](https://github.com/Gavin867/Git_Swol_WOD_Tracker/blob/main/public/assets/images/main-page.png)
 
 The Git Swol WOD Tracker is meant to serve as a tracker for all your fitness activities and workouts. With this application you can do the following:
 
 1. View stored fitness data in a dashboard
 2. Add new workout data to the database.
 
-<!-- ## Demo
-
-Click [here]()
-
-Click [here]()
-
-Other useful [link]()
- -->
 ## Installation
 
-No installation is required for running the deployed version of this application. Simply click the '[Deployed Application Link]()' provided in the '[Location](#location)' section to get started.
+No installation is required for running the deployed version of this application. Simply click the '[Deployed Application Link](https://git-swol-wod-tracker.herokuapp.com/)' provided in the '[Location](#location)' section to get started.
 
 To run locally follow the following instructions...
 1. Install MongoDB Atlas and Robo 3T workbench using the directions outlined in the '[mongoDB Documentation](https://docs.mongodb.com/manual/installation/)' and '[Robo 3T Documentation](https://robomongo.org/)'.
