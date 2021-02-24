@@ -21,6 +21,7 @@ A mongoDB application for people who like to lift things up and put them down ..
 ## Locations
 
 GitHub Repository Link: https://github.com/Gavin867/Git_Swol_WOD_Tracker
+
 Heroku Deployed Link: 
 
 ## Application Summary
